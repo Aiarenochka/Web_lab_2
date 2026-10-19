@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №2 — Варіант 10</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Лабораторна робота №2 (Варіант 10)</h1>
+
+<h2>Завдання 1.</h2>
+<p>Обчислити значення виразів при вказаних вхідних даних, які вводяться через
+    prompt() або через inputs. Результат вивести на сторінку, або через alert().</p>
+<form id="task1Form">
+    <label>x:
+        <input type="number" step="any" id="inpX" value="1.825" required>
+    </label>
+    <label>y:
+        <input type="number" step="any" id="inpY" value="18.225" required>
+    </label>
+    <label>z:
+        <input type="number" step="any" id="inpZ" value="-3.298" required>
+    </label>
+    <button type="submit">Обчислити</button>
+</form>
+<div id="resTask1" class="result">Введіть значення та натисніть «Обчислити».</div>
+
+<h2>Завдання 2.</h2>
+<p>Скласти програму обчислення наступних величин та виконати її у
+    середовищі програмування. Елементи списку (масиву) визначаються за
+    формулою a[i] = p[i] – 64; де p[i+1] = (p[i] * 67 + 11) % 128. p[0] дорівнює n –
+    номеру варіанта за списком групи, кількість елементів у списку ввести через
+    prompt() або input та не перевищує 50. Результат обчислень вивести під таблицею.
+    Індивідуальне завдання (варіант 10): модуль вектора a/3.</p>
+<form id="task2Form">
+    <label>Кількість елементів (до 50):
+        <input type="number" id="inpN" min="1" max="50" value="10" required>
+    </label>
+    <button type="submit">Згенерувати масив</button>
+</form>
+
+<table id="results-table">
+    <thead>
+    <tr>
+        <th>i</th>
+        <th>p[i]</th>
+        <th>a[i]</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div id="resTask2" class="result hidden"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
